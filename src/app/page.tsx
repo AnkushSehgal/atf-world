@@ -39,8 +39,18 @@ export default function Home() {
           One platform, infinite possibilities. Connecting you with world-class expertise across industries.
         </p>
 
+        {/* Featured BIM Service */}
+        <div className={styles.featuredService}>
+          <div className={styles.featuredBadge}>Featured Service</div>
+          <span className={styles.featuredIcon}>🏗️</span>
+          <h3 className={styles.featuredTitle}>Engineering & BIM</h3>
+          <p className={styles.featuredDescription}>
+            Expert BIM solutions for modern construction - Steel detailing, MEP, Rebar, and full project modeling
+          </p>
+        </div>
+
         <div className={styles.servicesGrid}>
-          {services.map((service, index) => (
+          {services.slice(1).map((service, index) => (
             <div key={index} className={styles.serviceCard}>
               <span className={styles.serviceIcon}>{service.icon}</span>
               <span className={styles.serviceName}>{service.name}</span>

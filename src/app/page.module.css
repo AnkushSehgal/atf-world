@@ -134,6 +134,79 @@
   line-height: 1.6;
 }
 
+.featuredService {
+  position: relative;
+  background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(79, 172, 254, 0.2);
+}
+
+.featuredService::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.featuredIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.featuredTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+}
+
+.featuredDescription {
+  font-size: 1rem;
+  color: #a8b2d1;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -218,6 +291,22 @@
   .badge {
     font-size: 0.75rem;
     padding: 0.4rem 1.2rem;
+  }
+
+  .featuredService {
+    padding: 2rem 1.5rem;
+  }
+
+  .featuredIcon {
+    font-size: 2.5rem;
+  }
+
+  .featuredTitle {
+    font-size: 1.5rem;
+  }
+
+  .featuredDescription {
+    font-size: 0.9rem;
   }
 
   .orb {
