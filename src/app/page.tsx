@@ -99,15 +99,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.servicesGrid}>
-          {services.slice(1).map((service, index) => (
-            <div key={index} className={styles.serviceCard}>
-              <span className={styles.serviceIcon}>{service.icon}</span>
-              <span className={styles.serviceName}>{service.name}</span>
-            </div>
-          ))}
-        </div>
-
         <WhatsAppButton />
       </div>
 
