@@ -28,7 +28,13 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.badge}>Launching Soon</div>
 
-        <div className={styles.logo}>ATF WORLD</div>
+        <div className={styles.logoContainer}>
+          <img
+            src="/ATF-V1-online-video-cutter.com_.gif"
+            alt="ATF World Logo"
+            className={styles.logoGif}
+          />
+        </div>
 
         <h1 className={styles.title}>
           Your Global Gateway to<br />
