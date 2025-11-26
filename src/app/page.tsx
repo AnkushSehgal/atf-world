@@ -1,6 +1,20 @@
 import styles from './page.module.css';
-import ServiceTicker from '@/components/ServiceTicker';
 import WhatsAppButton from '@/components/WhatsAppButton';
+
+const services = [
+  { name: "Engineering & BIM", icon: "🏗️" },
+  { name: "Education & Learning", icon: "📚" },
+  { name: "Food & Agriculture", icon: "🌾" },
+  { name: "Legal & Immigration", icon: "⚖️" },
+  { name: "Medical Tourism", icon: "🏥" },
+  { name: "Digital & Tech", icon: "💻" },
+  { name: "Emotional Wellness", icon: "🧘" },
+  { name: "Logistics & Equipment", icon: "🚚" },
+  { name: "Tourism & Fashion", icon: "✈️" },
+  { name: "Accounting & Finance", icon: "💰" },
+  { name: "Growth Engineering", icon: "📈" },
+  { name: "Other Solutions", icon: "⭐" }
+];
 
 export default function Home() {
   return (
@@ -12,19 +26,27 @@ export default function Home() {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.logo}>ATF World</div>
+        <div className={styles.badge}>Launching Soon</div>
+
+        <div className={styles.logo}>ATF WORLD</div>
 
         <h1 className={styles.title}>
-          Your Global Gateway to<br />Expert Solutions
+          Your Global Gateway to<br />
+          <span className={styles.highlight}>Expert Solutions</span>
         </h1>
 
-        <div className={styles.divider} />
-
         <p className={styles.subtitle}>
-          One platform, infinite possibilities. We are building the future of...
+          One platform, infinite possibilities. Connecting you with world-class expertise across industries.
         </p>
 
-        <ServiceTicker />
+        <div className={styles.servicesGrid}>
+          {services.map((service, index) => (
+            <div key={index} className={styles.serviceCard}>
+              <span className={styles.serviceIcon}>{service.icon}</span>
+              <span className={styles.serviceName}>{service.name}</span>
+            </div>
+          ))}
+        </div>
 
         <WhatsAppButton />
       </div>
