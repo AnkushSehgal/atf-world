@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 import ServiceTicker from '@/components/ServiceTicker';
-import EmailForm from '@/components/EmailForm';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
 
         <ServiceTicker />
 
-        <EmailForm />
+        <WhatsAppButton />
       </div>
 
       <footer className={styles.footer}>
