@@ -45,14 +45,58 @@ export default function Home() {
           One platform, infinite possibilities. Connecting you with world-class expertise across industries.
         </p>
 
-        {/* Featured BIM Service */}
-        <div className={styles.featuredService}>
-          <div className={styles.featuredBadge}>Featured Service</div>
-          <span className={styles.featuredIcon}>🏗️</span>
-          <h3 className={styles.featuredTitle}>Engineering & BIM</h3>
-          <p className={styles.featuredDescription}>
-            Expert BIM solutions for modern construction - Steel detailing, MEP, Rebar, and full project modeling
+        {/* BIM Expertise Section */}
+        <div className={styles.bimSection}>
+          <h2 className={styles.bimSectionTitle}>
+            Our Expertise in <span className={styles.bimHighlight}>BIM</span>
+          </h2>
+          <p className={styles.bimIntro}>
+            ATF World offers comprehensive Building Information Modeling services that span the entire project lifecycle.
+            Our BIM solutions enhance coordination, reduce conflicts, and accelerate project delivery while maintaining
+            the highest standards of accuracy.
           </p>
+
+          <div className={styles.bimServicesGrid}>
+            <div className={styles.bimCard}>
+              <div className={styles.bimIcon}>🏗️</div>
+              <h3 className={styles.bimCardTitle}>BIM Consulting</h3>
+              <p className={styles.bimCardDesc}>
+                Strategic guidance for successful BIM implementation, workflow optimization, and technology adoption across your organization.
+              </p>
+            </div>
+
+            <div className={styles.bimCard}>
+              <div className={styles.bimIcon}>🏛️</div>
+              <h3 className={styles.bimCardTitle}>Architectural BIM</h3>
+              <p className={styles.bimCardDesc}>
+                Detailed design modeling that captures every architectural element with precision for seamless coordination.
+              </p>
+            </div>
+
+            <div className={styles.bimCard}>
+              <div className={styles.bimIcon}>🔧</div>
+              <h3 className={styles.bimCardTitle}>Structural BIM</h3>
+              <p className={styles.bimCardDesc}>
+                Engineering-grade structural models with complete detailing for steel, concrete, and composite systems.
+              </p>
+            </div>
+
+            <div className={styles.bimCard}>
+              <div className={styles.bimIcon}>🚧</div>
+              <h3 className={styles.bimCardTitle}>Civil & Utilities BIM</h3>
+              <p className={styles.bimCardDesc}>
+                Comprehensive infrastructure planning including site development, grading, and utility coordination.
+              </p>
+            </div>
+
+            <div className={styles.bimCard}>
+              <div className={styles.bimIcon}>⚡</div>
+              <h3 className={styles.bimCardTitle}>MEP(F) BIM</h3>
+              <p className={styles.bimCardDesc}>
+                Integrated modeling of mechanical, electrical, plumbing, and fire protection systems with clash detection and resolution.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.servicesGrid}>
