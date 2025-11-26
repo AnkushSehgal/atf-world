@@ -84,6 +84,7 @@
   max-width: 1200px;
   width: 100%;
   animation: fadeIn 1.5s ease-out;
+  padding-bottom: 80px;
 }
 
 .badge {
